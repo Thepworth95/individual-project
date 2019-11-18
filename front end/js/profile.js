@@ -9,7 +9,7 @@ function getplayersMatches() {
 
 function displayMatches(data) {
     for (let match of data) {
-        if (match.player1.username === playername.innerText) {
+        if (match.player1.username === sessionStorage.getItem('playername')) {
             let newMatch = document.createElement("tr");
             let id = document.createElement("td");
             id.innerText = match.id;
@@ -33,7 +33,7 @@ function displayMatches(data) {
         }
     }
     for (let match of data) {
-        if (match.player2.username === playername.innerText) {
+        if (match.player2.username === sessionStorage.getItem('playername')) {
             let newMatch = document.createElement("tr");
             let id = document.createElement("td");
             id.innerText = match.id;
@@ -59,12 +59,13 @@ function displayMatches(data) {
 }
 
 function displayUsername(data) {
-    playername.innerText = sessionStorage.getItem('playername')
     for (let player of data) {
         if (player.username === sessionStorage.getItem('playername')) {
             sessionStorage.playerid = player.id;
+            sessionStorage.playerfavchar = player.character.name;
         }
-    }
+    }    
+    playername.innerText = sessionStorage.getItem('playername') + "-" + sessionStorage.getItem('playerfavchar')
 }
 
 function updateUsername() {
@@ -76,6 +77,7 @@ function updateUsername() {
         method: "PUT",
         headers: { "Content-Type": "application/json" }
     })
+    sessionStorage.playername = document.getElementById("updatedUserName").value;
     window.location.href = "./profile.html";
 }
 
