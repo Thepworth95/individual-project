@@ -131,4 +131,9 @@ function updateLastName() {
 
 
 
-
+function deletePlayer() {
+    fetch("http://localhost:8080/players/delete/"+sessionStorage.getItem('playerid'), {
+        method: "DELETE"
+    })
+    window.location.href = "./login.html";
+}
