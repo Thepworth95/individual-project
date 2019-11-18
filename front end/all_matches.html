@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./css/Global.css">
+  <link rel="stylesheet" href="./css/all_matches.css">
+
+</head>
+
+<body onload="getAllMatches();">
+  <nav class="nav site-header sticky-top py-1 navbar">
+    <a class="nav-link active" color="red" href="./index.html">Smash Tracker</a>
+    <a class="nav-link" href="./all_matches.html">All matches</a>
+    <a class="nav-link" href="./login.html">Login</a>
+    <a class="nav-link" href="./register.html">Register</a>
+  </nav>
+  <div>
+    <div>
+      <img src="./CSS/hero01_en.jpg" width="16.66%"><img src="./CSS/hero02_en.jpg" width="16.66%"><img src="./CSS/hero03_en.jpg"
+        width="16.66%"><img src="./CSS/hero04_en.jpg" width="16.66%"><img src="./CSS/hero05_en.jpg" width="16.66%"><img src="./CSS/hero06_en.jpg"
+        width="16.66%">
+    </div>
+  </div>
+  <table id="table of all matches" class="display" style="width:60%">
+    <thead>
+      <tr>
+        <th>match id</th>
+        <th>Player 1</th>
+        <th>Character</th>
+        <th>Player 2</th>
+        <th>Character</th>
+        <th>Winner</th>
+      </tr>
+    </thead>
+    <tbody id="table_entries">
+    </tbody>
+    <tfoot>
+      <tr>
+        <th>match id</th>
+        <th>Player 1</th>
+        <th>Character</th>
+        <th>Player 2</th>
+        <th>Character</th>
+        <th>Winner</th>
+      </tr>
+    </tfoot>
+  </table>
+
+
+
+
+
+  <script src="./js/all_matches.js"></script>
+</body>
+
+</html>

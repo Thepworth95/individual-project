@@ -1,0 +1,30 @@
+{
+	"name": "Captain Falcon",
+	"final_smash": "Blue Falcon",
+	"tier": "B"
+}
+
+
+{
+	"username": "jh",
+	"password": "password",
+	"firstname": "jordan",
+	"lastname": "harrison",
+	"favouriteCharacter_id": 3
+}
+
+
+{
+	"player1_id": 1,
+	"player2_id": 1,
+	"character1_id": 1,
+	"character2_id": 1,
+	"matchwinner_id": 1
+}
+
+
+INSERT INTO characters (id, name, final_smash, tier) VALUES (1, "Mario", "Mario Finale", "A"),(2, "Donkey Kong", "Jungle Rush", "D"),(3, "Link", "Ancient Bow And Arrow", "B"),(4, "Samus", "Zero Laser", "D"),(5, "Dark Samus", "Phazon Laser", "D"),(6, "Yoshi", "Yoshi Stampede", "A"),(7, "Kirby", "Ultra Sword", "E"),(8, "Fox", "Team Star Fox", "S"),(9, "Pikachu", "Volt Tackle", "S"),(10, "Luigi", "Poltagust G-00", "B"),(11, "Ness", "PK Starstorm", "B"),(12, "Captain Falcon", "Blue Falcon", "B"),(13, "Jigglypuff", "Puff Up", "E"),(14, "Peach", "Peach Blossom", "S"),(15, "Daisy", "Daisy Blossom", "S"),(16, "Bowser", "Giga Bowser Punch", "B"),(17, "Ice Climbers", "Iceberg", "C"),(18, "Sheik", "Sheikah Dance", "C"),(19, "Zelda", "Triforce Of Wisdom", "C"),(20, "Dr. Mario", "Doctor Finale", "D"),(21, "Pichu", "Volt Tackle", "S"),(22, "Falco", "Team Star Fox", "B"),(23, "Marth", "Critical Hit", "A"),(24, "Lucina", "Critical Hit", "S"),(25, "Young Link", "Triforce Slash", "B"),(26, "Ganondorf", "Ganon, The Demon King", "C"),(27, "Mewtwo", "Psy Strike", "C"),(28, "Roy", "Critical Hit", "A"),(29, "Chrom", "Awakening Aether", "A"),(30, "Mr. Gam & Watch", "Octopus", "B"),(31, "Meta Knight", "Darkness Illusion", "B"),(32, "Pit", "Lightning Chariot", "D"),(33, "Dark Pit", "Dark Pit Staff", "D"),(34, "Zero Suit Samus", "Zero Laser", "A"),(35, "Wario", "Wario-Man", "A"),(36, "Snake", "Covering Fire", "S"),(37, "Ike", "Great Aether", "A"),(38, "Pokemon Trainer", "Triple Finish", "A"),(39, "Diddy Kong", "Hyper Rockerbarrel", "B"),(40, "Lucas", "PK Starstorm", "C"),(41, "Sonic", "Super Sonic", "C"),(42, "King Dedede", "DEde-Rush", "C"),(43, "Olimar", "End of Day", "A"),(44, "Lucario", "Aura Storm", "B"),(45, "R.O.B.", "Guided Robo Beam", "A"),(46, "Toon Link", "Triforce Slash", "C"),(47, "Wolf", "Team Star Wolf", "S"),(48, "Villager", "Dream Home", "D"),(49, "Mega Man", "Mega Legends", "A"),(50, "Wii Fit Trainer", "Wii Fit", "B"),(51, "Rosalina and Luma", "Grand Star", "C"),(52, "Little Mac", "Giga Mac Rush", "E"),(53, "Greninja", "Secret Ninja Attack", "A"),(54, "Palutena", "Black Hole Laser", "S"),(55, "Pac-Man", "Super Pac-Man", "A"),(56, "Robin", "Pair Up", "D"),(57, "Shulk", "Chain Attack", "A"),(58, "Bowser Jr.", "Shadow Mario Paint", "E"),(59, "Duck hunt Duo", "NES Zapper Posse", "C");
+INSERT INTO characters (id, name, final_smash, alt_final_smash, tier) VALUES (60, "Ryu", "Shin Shoryuken", "Shinku Hadoken",  "B"),(61, "Ken", "Shippu Jinraikyaku", "Shinryuken", "A");
+INSERT INTO characters (id, name, final_smash, tier) VALUES (62, "Cloud", "Omnislash", "C"),(63, "Corrin", "Torrential Roar", "D"),(64, "Bayonetta", "Infernal Climax", "C"),(65, "Inkling", "Killer Wail", "S"),(66, "Ridley", "Plasma Scream", "D"),(67, "Simon", "Grand Cross", "C"),(68, "Rikter", "Grand Cross", "C"),(69, "King K. Rule", "Blast-O-Matic", "D"),(70, "Isabelle", "Dream Town Hall", "E"),(71, "Incineroar", "Max Malicious Moonsault", "D"),(72, "Piranha Plant", "Petey Piranha", "E"),(73, "Joker", "All-Out Attack", "S"),(74, "Hero", "Gigaslash", "B"),(75, "Banjo & Kazooie", "The Mighty Jinjonator", "B"),(76, "Terry", "Triple Wolf", "A"),(77, "Mii Brawler", "Omega Blitz", "D"),(78, "Mii Sword Fighter", "Final Edge", "C"),(79, "Mii Gunner", "Full Blast", "D");
+INSERT INTO players (id, username, password, firstname, lastname, favouriteCharacter_id) VALUES(1, "tom", "password", "Thomas", "Hepworth",57),(2, "NINJ", "password", "James", "Firth",62),(3, "jh", "password", "Jordan", "harrison",62),(4, "FZZ", "password", "Nganga", "Njiraini",65),(5, "milo", "password", "Milo", "Brookes",11),(6, "jack", "password", "Jack", "Gilman",37);
+INSERT INTO matches (id, player1_id, player2_id, character1_id, character2_id, matchwinner_id) VALUES (1,4,57,65,),(1,4,3,34,),(1,4,33,36,),(2,3,62,62,),(2,3,62,62,),(2,3,62,62,),(1,5,57,46,),(1,5,54,22,),(4,5,65,11,),(4,5,38,11,);

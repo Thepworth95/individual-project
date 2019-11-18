@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./css/Global.css">
+  <link rel="stylesheet" href="./css/all_matches.css">
+
+</head>
+
+<body onload=" getplayersMatches();">
+  <nav class="nav site-header sticky-top py-1 navbar">
+    <a class="nav-link active" color="red" href="./index.html">Smash Tracker</a>
+    <a class="nav-link" href="./all_matches.html">All matches</a>
+    <a class="nav-link" href="./login.html">Login</a>
+    <a class="nav-link" href="./register.html">Register</a>
+  </nav>
+  <div>
+    <div>
+      <img src="./CSS/hero01_en.jpg" width="16.66%"><img src="./CSS/hero02_en.jpg" width="16.66%"><img src="./CSS/hero03_en.jpg"
+        width="16.66%"><img src="./CSS/hero04_en.jpg" width="16.66%"><img src="./CSS/hero05_en.jpg" width="16.66%"><img src="./CSS/hero06_en.jpg"
+        width="16.66%">
+    </div>
+    <h1 id="playername">tom</h1>
+  </div>
+  <table id="table of players matches" class="display" style="width:60%">
+    <thead>
+      <tr>
+        <th>match id</th>
+        <th>Player 1</th>
+        <th>Character</th>
+        <th>Player 2</th>
+        <th>Character</th>
+        <th>Winner</th>
+      </tr>
+    </thead>
+    <tbody id="table_entries">
+    </tbody>
+    <tfoot>
+      <tr>
+        <th>match id</th>
+        <th>Player 1</th>
+        <th>Character</th>
+        <th>Player 2</th>
+        <th>Character</th>
+        <th>Winner</th>
+      </tr>
+    </tfoot>
+  </table>
+
+  <br>
+  <br>
+
+  <form class="form-signin container" style="max-width: 500px;" onsubmit="updateUsername(); return false;">
+    <h1 class="h3 mb-3 font-weight-normal" width="50%">Update profile</h1>
+    <label for="inputusername" class="sr-only" width="50%">username</label>
+    <input type="text" id="updatedUserName" class="form-control" placeholder="username" required="" autofocus="" width="50%">
+    <button class="btn btn-lg btn-primary btn-block" type="submit">update</button>
+  </form>
+
+    <form class="form-signin container" style="max-width: 500px;" onsubmit="updatePassword(); return false;">
+    <label for="inputpassword" class="sr-only" width="50%">password</label>
+    <input type="text" id="updatedpassword" class="form-control" placeholder="password" required="" autofocus="" width="50%">
+    <button class="btn btn-lg btn-primary btn-block" type="submit">update</button>
+  </form>
+
+    <form class="form-signin container" style="max-width: 500px;" onsubmit="updateFirstName(); return false;">
+    <label for="inputfirstname" class="sr-only" width="50%">firstname</label>
+    <input type="text" id="updatedfirstName" class="form-control" placeholder="firstname" required="" autofocus="" width="50%">
+    <button class="btn btn-lg btn-primary btn-block" type="submit">update</button>
+  </form>
+
+    <form class="form-signin container" style="max-width: 500px;" onsubmit="updateLastName(); return false;">
+    <label for="inputlastname" class="sr-only" width="50%">lastrname</label>
+    <input type="text" id="updatedlastName" class="form-control" placeholder="lastname" required="" autofocus="" width="50%">
+    <button class="btn btn-lg btn-primary btn-block" type="submit">update</button>
+  </form>
+
+    <form class="form-signin container" style="max-width: 500px;" onsubmit="updateFavChar(); return false;">
+    <label for="inputfavouritecharacter" class="sr-only" width="50%">favourite character</label>
+    <input type="text" id="updatedfavouritecharacter" class="form-control" placeholder="favourite character" required="" autofocus="" width="50%">
+    <button class="btn btn-lg btn-primary btn-block" type="submit">update</button>
+  </form>
+
+  <script src="./js/profile.js"></script>
+</body>
+
+</html>

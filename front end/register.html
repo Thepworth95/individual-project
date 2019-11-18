@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./css/Global.css">
+
+</head>
+
+<body>
+  <nav class="nav site-header sticky-top py-1 navbar">
+    <a class="nav-link active" color="red" href="./index.html">Smash Tracker</a>
+    <a class="nav-link" href="./all_matches.html">All matches</a>
+    <a class="nav-link" href="./login.html">Login</a>
+    <a class="nav-link" href="./register.html">Register</a>
+  </nav>
+  <div>
+    <div>
+      <img src="./CSS/hero01_en.jpg" width="16.66%"><img src="./CSS/hero02_en.jpg" width="16.66%"><img src="./CSS/hero03_en.jpg"
+        width="16.66%"><img src="./CSS/hero04_en.jpg" width="16.66%"><img src="./CSS/hero05_en.jpg" width="16.66%"><img src="./CSS/hero06_en.jpg"
+        width="16.66%">
+    </div>
+  </div>
+  <form class="form-signin container" style="max-width: 500px;" onsubmit="registerUser(); return false;">
+    <h1 class="h3 mb-3 font-weight-normal" width="50%">Please Register</h1>
+    <label for="inputusername" class="sr-only" width="50%">username</label>
+    <input type="text" id="inputusername" class="form-control" placeholder="username" required="" autofocus="" width="50%">
+    <label for="inputPassword" class="sr-only" width="50%">Password</label>
+    <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="" width="50%">
+    <label for="inputfirstname" class="sr-only" width="50%">firstname</label>
+    <input type="text" id="inputfirstname" class="form-control" placeholder="firstname" required="" width="50%">
+    <label for="inputlastname" class="sr-only" width="50%">lastname</label>
+    <input type="text" id="inputlastname" class="form-control" placeholder="lastname" required="" width="50%">
+    <label for="inputfavouriteCharacter_id" class="sr-only" width="50%">favouriteCharacter_id</label>
+    <input type="text" id="inputfavouriteCharacter_id" class="form-control" placeholder="favouriteCharacter_id"
+      required="" width="50%">
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Register</button>
+  </form>
+
+
+
+
+
+
+  <script src="./js/register.js"></script>
+</body>
+
+</html>
