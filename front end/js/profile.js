@@ -76,10 +76,11 @@ function updateUsername() {
         }),
         method: "PUT",
         headers: { "Content-Type": "application/json" }
-    })
-    sessionStorage.playername = document.getElementById("updatedUserName").value;
-    window.location.href = "./profile.html";
-}
+    }).then( () => 
+    sessionStorage.playername = document.getElementById("updatedUserName")
+    .value).then( () => 
+    window.location.href = "./profile.html"
+    )}
 
 function updatePassword() {
     fetch("http://localhost:8080/players/update", {
@@ -89,9 +90,9 @@ function updatePassword() {
         }),
         method: "PUT",
         headers: { "Content-Type": "application/json" }
-    })
-    window.location.href = "./profile.html";
-}
+    }).then( () => 
+    window.location.href = "./profile.html"
+    )}
 
 function updateFirstName() {
     fetch("http://localhost:8080/players/update", {
@@ -101,9 +102,9 @@ function updateFirstName() {
         }),
         method: "PUT",
         headers: { "Content-Type": "application/json" }
-    })
-    window.location.href = "./profile.html";
-}
+    }).then( () => 
+    window.location.href = "./profile.html"
+    )}
 
 function updateLastName() {
     fetch("http://localhost:8080/players/update", {
@@ -113,9 +114,9 @@ function updateLastName() {
         }),
         method: "PUT",
         headers: { "Content-Type": "application/json" }
-    })
-    window.location.href = "./profile.html";
-}
+    }).then( () => 
+    window.location.href = "./profile.html"
+    )}
 
 function updateFavChar() {
     fetch("http://localhost:8080/players/update", {
@@ -125,15 +126,15 @@ function updateFavChar() {
         }),
         method: "PUT",
         headers: { "Content-Type": "application/json" }
-    })
-    window.location.href = "./profile.html";
-}
+    }).then( () => 
+    window.location.href = "./profile.html"
+    )}
 
 
 
 function deletePlayer() {
     fetch("http://localhost:8080/players/delete/"+sessionStorage.getItem('playerid'), {
         method: "DELETE"
-    })
-    window.location.href = "./login.html";
-}
+    }).then( () => 
+    window.location.href = "./login.html"
+    )}

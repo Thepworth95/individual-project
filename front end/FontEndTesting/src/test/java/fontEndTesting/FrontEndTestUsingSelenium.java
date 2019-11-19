@@ -31,16 +31,24 @@ public class FrontEndTestUsingSelenium {
 		WebElement createlastname = driver.findElement(By.xpath("/html/body/form/input[4]"));
 		createlastname.sendKeys("lastname");
 		WebElement createfavchar = driver.findElement(By.xpath("/html/body/form/input[5]"));
-		createfavchar.sendKeys("shulk");
+		createfavchar.sendKeys("57");
 		WebElement createregister = driver.findElement(By.xpath("/html/body/form/button"));
 		createregister.click();
 		Thread.sleep(2000);
 		WebElement loginpage = driver.findElement(By.xpath("/html/body/nav/a[3]"));
 		loginpage.click();
+		WebElement loginuserame2 = driver.findElement(By.xpath("/html/body/form/input[1]"));
+		loginuserame2.sendKeys("frenchy");
+		WebElement loginpassword = driver.findElement(By.xpath("/html/body/form/input[2]"));
+		loginpassword.sendKeys("password");
+		WebElement loginsubmitdetails = driver.findElement(By.xpath("/html/body/form/button"));
+		loginsubmitdetails.click();
+		Thread.sleep(2000);
 		WebElement updateuserame = driver.findElement(By.xpath("/html/body/form[1]/input"));
 		updateuserame.sendKeys("zak");
 		WebElement updateuserameclick = driver.findElement(By.xpath("/html/body/form[1]/button"));
 		updateuserameclick.click();
+		Thread.sleep(2000);		
 		WebElement updatepassword = driver.findElement(By.xpath("/html/body/form[2]/input"));
 		updatepassword.sendKeys("abcde");
 		WebElement updatepasswordclick = driver.findElement(By.xpath("/html/body/form[2]/button"));
@@ -49,19 +57,23 @@ public class FrontEndTestUsingSelenium {
 		loginpage2.click();
 		WebElement loginuserame = driver.findElement(By.xpath("/html/body/form/input[1]"));
 		loginuserame.sendKeys("zak");
-		WebElement loginpassword = driver.findElement(By.xpath("/html/body/form/input[2]"));
-		loginpassword.sendKeys("abcde");
-		WebElement loginsubmitdetails = driver.findElement(By.xpath("/html/body/form/button"));
-		loginsubmitdetails.click();
-		WebElement deleteuser = driver.findElement(By.xpath("/html/body/button"));
-		deleteuser.click();
-		WebElement loginuserame2 = driver.findElement(By.xpath("/html/body/form/input[1]"));
-		loginuserame2.sendKeys("zak");
 		WebElement loginpassword2 = driver.findElement(By.xpath("/html/body/form/input[2]"));
 		loginpassword2.sendKeys("abcde");
 		WebElement loginsubmitdetails2 = driver.findElement(By.xpath("/html/body/form/button"));
 		loginsubmitdetails2.click();
-		assertEquals("", "**Successful Login**", driver.findElement(By.xpath("")).getText());
+		WebElement deleteuser = driver.findElement(By.xpath("/html/body/button"));
+		deleteuser.click();
+		
+		WebElement loginuserame3 = driver.findElement(By.xpath("/html/body/form/input[1]"));
+		loginuserame3.sendKeys("zak");
+		WebElement loginpassword3 = driver.findElement(By.xpath("/html/body/form/input[2]"));
+		loginpassword3.sendKeys("abcde");
+		WebElement loginsubmitdetails3 = driver.findElement(By.xpath("/html/body/form/button"));
+		loginsubmitdetails3.click();
+		Thread.sleep(5000);	
+		String a = driver.switchTo().alert().getText();
+		driver.switchTo().alert().accept(); 
+		assertEquals("", "username does not exist", a);
 	}
 		
 	

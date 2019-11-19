@@ -20,7 +20,7 @@ function checkUsername(data) {
         let passwordinput = document.getElementById("inputPassword");
         let firstnameinput = document.getElementById("inputfirstname");
         let lastnameinput = document.getElementById("inputlastname");
-        let favouriteCharacter_idinput = document.getElementById("inputlastname");
+        let favouriteCharacter_idinput = document.getElementById("inputfavouriteCharacter_id");
         sessionStorage.playername = usernameinput.value;
 
         let bodyinput = {
