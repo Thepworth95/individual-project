@@ -28,7 +28,7 @@ function checkUsername(data) {
             password: passwordinput.value,
             firstname: firstnameinput.value,
             lastname: lastnameinput.value,
-            favouriteCharacter_id: 57
+            favouriteCharacter_id: favouriteCharacter_idinput.value
         }
         fetch("http://localhost:8080/players/post",{
             body: JSON.stringify(bodyinput),

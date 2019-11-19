@@ -117,17 +117,17 @@ function updateLastName() {
     window.location.href = "./profile.html";
 }
 
-// function updateFavChar() {
-//     fetch("http://localhost:8080/players/update", {
-//         body: JSON.stringify({
-//             id: sessionStorage.getItem('playerid'),
-//             favouriteCharacter_id: document.getElementById("updatedfavouritecharacter").value
-//         }),
-//         method: "PUT",
-//         headers: { "Content-Type": "application/json" }
-//     })
-//     window.location.href = "./profile.html";
-// }
+function updateFavChar() {
+    fetch("http://localhost:8080/players/update", {
+        body: JSON.stringify({
+            id: sessionStorage.getItem('playerid'),
+            favouriteCharacter_id: document.getElementById("updatedfavouritecharacter").value
+        }),
+        method: "PUT",
+        headers: { "Content-Type": "application/json" }
+    })
+    window.location.href = "./profile.html";
+}
 
 
 
