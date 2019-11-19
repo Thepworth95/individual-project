@@ -18,7 +18,7 @@ public class FrontEndTestUsingSelenium {
 	}
 	
 	@Test
-	public void test1() {
+	public void test1() throws InterruptedException {
 		driver.get("file:///c%3A/Users/Admin/individual%20project/front%20end/index.html");
 		WebElement webEle = driver.findElement(By.xpath("/html/body/nav/a[4]"));
 		webEle.click();
@@ -34,9 +34,10 @@ public class FrontEndTestUsingSelenium {
 		createfavchar.sendKeys("shulk");
 		WebElement createregister = driver.findElement(By.xpath("/html/body/form/button"));
 		createregister.click();
+		Thread.sleep(2000);
 		WebElement loginpage = driver.findElement(By.xpath("/html/body/nav/a[3]"));
 		loginpage.click();
-		WebElement updateuserame = driver.findElement(By.xpath("/html/body/form/input[1]"));
+		WebElement updateuserame = driver.findElement(By.xpath("/html/body/form[1]/input"));
 		updateuserame.sendKeys("zak");
 		WebElement updateuserameclick = driver.findElement(By.xpath("/html/body/form[1]/button"));
 		updateuserameclick.click();
