@@ -30,7 +30,7 @@ matches.belongsTo(characters, { as: 'character2', foreignKey: 'character2_id' })
 players.belongsTo(characters, { foreignKey: 'favouriteCharacter_id' });
 // characters.hasOne(players);
 
-//sequelize.sync({force: true});
+// sequelize.sync({force: true});
 // 
 
 
